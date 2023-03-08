@@ -17,10 +17,9 @@
             include 'game.php';
             foreach($db as $data) {
                 $game = new Game($data);
-                echo '<div class="container" style="height: calc(100vh - 10.627vh - 5.313vh); margin-top: 5.313vh; font-size: 18px;">';
+                echo '<div class="container" style="height: calc(100vh - 10.627vh - 5.313vh); margin-top: 5.313vh; font-size: 24px;">';
                     echo '<div>';
                         echo '<div class="d-flex flex-column justify-content-center align-items-center">';
-                            echo "<div class='text-white'>Game</div>";
                             echo "<div class='text-white'> {$game->getGame()} </div>";
                             echo "<div class='text-white'> <img src='{$game->getURL()}' width=400px/> </div>";
                         echo '</div>';
